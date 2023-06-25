@@ -17,51 +17,63 @@
     <h1>Coding Languages Quiz</h1>
 
 
-<form>
+<form id ="select-form">
+<div>
     <label for="question1">1. Do you want to learn how to code?</label>
-    <select id="" name="">
-      <option value="yes">Yes</option>
-      <option value="no">No</option>
+    <select id="q1">
+        <option disabled hidden selected></option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
     </select>
-</form>
-<form>
-    <label for="question2">2. Are you Interested in Website Development?</label>
-    <select id="" name="">
-      <option value="yes">Yes</option>
-      <option value="no">No</option>
+</div>
+<div>
+    <label for="question2">2. Are you interested in Web Development?</label>
+    <select id="q2" >
+        <option disabled hidden selected></option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
     </select>
-</form>
-<form>
-    <label for="question3">3. Are you Interested in Game Development?</label>
-    <select id="" name="">
-      <option value="yes">Yes</option>
-      <option value="no">No</option>
-    </select>
-</form>
-<form>
-    <label for="question4">4. Are you Interested in Robotics?</label>
-    <select id="" name="">
-      <option value="yes">Yes</option>
-      <option value="no">No</option>
-    </select>
-</form>
-<form>
-    <label for="question5">5. Are you Interested in AI Development?</label>
-    <select id="" name="">
-      <option value="yes">Yes</option>
-      <option value="no">No</option>
-    </select>
+</div>
+<div>
+    <label for="question3">3. Are you interested in Game Development?</label>
+<select id="q3">
+    <option disabled hidden selected></option>
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+</select>
+</div>
+<div>
+    <label for="question4">4. Are you interested in AI Development?</label>
+<select id="q4">
+    <option disabled hidden selected></option>
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+</select>
+</div>
+<div>
+    <label for="question5">5. Are you interested in Robotics?</label>
+<select id="q5">
+    <option disabled hidden selected></option>
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+</select>
+</div>
+    
+    
 </form>
 
-<button id="submit" value="submitQuiz">Submit Quiz</button>
-<div id="results"></div>
 
-      
+
+<button id="submit" onclick="getValue()" value="submitQuiz">Submit Quiz</button>
+<div id="result"></div>
+
 
     </body>
 <div class="quiz-container">
   <div id="quiz"></div>
 </div>
+</html>
+    
 
 
 
