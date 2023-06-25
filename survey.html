@@ -6,8 +6,7 @@
         <title>Survey</title>
     </head>
 
-    
- <body>
+<body>
         <div id="title">
         <strong>Code Languages Quiz</strong>
     </div>
@@ -17,9 +16,9 @@
     <h1>Coding Languages Quiz</h1>
 
 
-<form id ="select-form">
+<form id ="questions">
 <div>
-    <label for="question1">1. Do you want to learn how to code?</label>
+    <label for="questions">1. Do you want to learn how to code?</label>
     <select id="q1">
         <option disabled hidden selected></option>
         <option value="yes">Yes</option>
@@ -27,7 +26,7 @@
     </select>
 </div>
 <div>
-    <label for="question2">2. Are you interested in Web Development?</label>
+    <label for="questions">2. Are you interested in Web Development?</label>
     <select id="q2" >
         <option disabled hidden selected></option>
         <option value="yes">Yes</option>
@@ -35,7 +34,7 @@
     </select>
 </div>
 <div>
-    <label for="question3">3. Are you interested in Game Development?</label>
+    <label for="questions">3. Are you interested in Game Development?</label>
 <select id="q3">
     <option disabled hidden selected></option>
     <option value="yes">Yes</option>
@@ -43,7 +42,7 @@
 </select>
 </div>
 <div>
-    <label for="question4">4. Are you interested in AI Development?</label>
+    <label for="questions">4. Are you interested in AI Development?</label>
 <select id="q4">
     <option disabled hidden selected></option>
     <option value="yes">Yes</option>
@@ -51,24 +50,20 @@
 </select>
 </div>
 <div>
-    <label for="question5">5. Are you interested in Robotics?</label>
+    <label for="questions">5. Are you interested in Robotics?</label>
 <select id="q5">
     <option disabled hidden selected></option>
     <option value="yes">Yes</option>
     <option value="no">No</option>
 </select>
 </div>
-    
-    
 </form>
 
+<button id="submit" onclick="getValue()"value="submitQuiz">Submit Quiz</button>
 
-
-<button id="submit" onclick="getValue()" value="submitQuiz">Submit Quiz</button>
 <div id="result"></div>
+</body>
 
-
-    </body>
 <div class="quiz-container">
   <div id="quiz"></div>
 </div>
